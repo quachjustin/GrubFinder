@@ -1,2 +1,2 @@
-Web application to share restaurant data
-#GrubFinder
+Web application to share restaurant data #GrubFinder
+
