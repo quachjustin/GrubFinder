@@ -51,6 +51,11 @@ body {
     margin-bottom: 2rem;
 }
 
+.form__titleGrub {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .form__message {
     text-align: center;
     margin-bottom: 1rem;
