@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <meta name = "viewpoint" content = "wiidtth=device-width, initial-scale1.0">
+    <meta name = "viewpoint" content = "width=device-width, initial-scale1.0">
     <meta charset="utf-8">
     <title> Login / Sign up Form </title>
     <link rel = "shortcut icon" href = "/assets/favicon.ico">
@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class = "container" >
-        <form class = "form" action="authentication.php" onsubmit = "validation()" id = "login">
+        <form class = "form" action="authentication.php" onsubmit = "validation()" id = "login" method = "POST"> 
             <h1 class="form__titleGrub">GrubFinder</h1>
             
             <!--username input-->
@@ -25,7 +25,8 @@
 
             <!--username password-->
             <div class="form__input-group">
-                <input type="password" id = "pass" name = "pass"class="form__input" autofocus placeholder="Password">
+
+                <input type="password" id = "pass" name = "pass" class="form__input" autofocus placeholder="Password">
                 <div class="form__input-error-message"></div>
             </div>
             <button class="form__button" type = "submit">Submit</button>
