@@ -28,9 +28,6 @@
             <!--username password input-->
             <div class="form__input-group">
 
-
-
-
                 <input type= "password" id = "pass" name = "pass" class="form__input" autofocus placeholder="Password">
                 <div class="form__input-error-message"></div>
             </div>
@@ -44,8 +41,6 @@
                 <a class = "form__link" href= "./" id="linkCreateAccount" >Don't have an account? Create an account!</a>
             </p>
         </form>
-
-
 
         <!--creating an account-->
 
@@ -76,5 +71,23 @@
         </form>
     </div>
     <script src = "./src/main.js"></script>
+    <script >
+        function validation() {
+            const user = document.getElementById("user")
+            console.log(user.value);
+            const pass = document.getElementById("pass")
+            console.log(pass.value);
+            const url = "http://localhost/login/authentication.php"
+            fetch(url, {
+            method: "POST",
+            mode: "no-cors", 
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({user, pass})
+            }).then(res => console.log(res.json()))
+
+        }
+    </script>
 </body>
 
